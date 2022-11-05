@@ -24,12 +24,10 @@ JOBS =[
     'salary':'Rs. 12,00,000'
   },
   {
-    {
-  'id':4,
+    'id':4,
     'title':'backend engineer',
     'location':'san francisco,USA',
-    'salary':'$12,00,000'
-    } 
+    'salary':'$12,00,000' 
   }
   
   
@@ -40,7 +38,7 @@ JOBS =[
 ]
 @app.route("/")
 def hello_world():
-  return render_template('home.html',jobs=JOBS)
+  return render_template('home.html',jobs=JOBS,company_name='jovian')
 
 if __name__ == '__main__':
   app.run(host='0.0.0.0',debug=True)
